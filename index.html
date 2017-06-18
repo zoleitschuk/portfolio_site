@@ -5,13 +5,21 @@
 	<title>Zacary Oleitschuk Professional Portfolio Site</title>
 
 	<!-- Various links added here -->
-	<link rel="icon" sizes="192x192" href="/images/icon.png">
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/responsive.css" />
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="container">
 	<!--website header -->
-	<header class="header">
+	<header class="page-header header">
 		<img class="header-logo" src="http://placehold.it/75x75" alt="Website logo">
 		<!--
 		use svg if I want to create my own logo using css.
@@ -25,33 +33,41 @@
 	</header>
 
 	<!-- website main content -->
-	<main>
+		<div class="jumbotron">
 		<!--img is used below instead of figure as site content would not be affected if the image were removed -->
 		<img id="banner" src="http://placehold.it/800x200" alt="Picture of me.">
-		<section id="featured-works">
-			<h2 class="section-title">Featured Works</h2>
-			<article class="featured-work">
-				<img class="featured-work-image" src="img/neural-recruiter.png" alt="Output results visualization for the neural recruiter applicaiton.">
-				<h3 class="featured-work-title">Neural Recruiter</h3>
-				<p class="featured-work-github-link">
-					<a href="https://github.com/zoleitschuk/NeuralRecruiter">https://github.com/zoleitschuk/NeuralRecruiter</a>
-				</p>
-			</article>
-			<article class="featured-work">
-				<img class="featured-work-image" src="img/favorite-movies.png" alt="Screenshot of the favorite movies site.">
-				<h3 class="featured-work-title">Favorite Movies Site</h3>
-				<p class="featured-work-github-link">
-					<a href="https://github.com/zoleitschuk/movie_website_project">https://github.com/zoleitschuk/movie_website_project</a>
-				</p>
-			</article>
-			<article class="featured-work">
-				<img class="featured-work-image" src="http://placehold.it/350x200" alt="Screenshot of the proffessional portfolio site.">
-				<h3 class="featured-work-title">Professional Portfolio Site</h3>
-				<p class="featured-work-github-link">
-					<a href="https://github.com/zoleitschuk/portfolio_site">https://github.com/zoleitschuk/portfolio_site</a>
-				</p>
-			</article>
+		</div>
+		<section class="container">
+			<h2>Featured Works</h2>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<a href="https://github.com/zoleitschuk/NeuralRecruiter">
+							<img class="featured-work-image" src="img/neural-recruiter.png" alt="Output results visualization for the neural recruiter applicaiton.">
+							<h3 class="featured-work-title">Neural Recruiter</h3>
+							<p class="featured-work-github-link">https://github.com/ zoleitschuk/ NeuralRecruiter</p>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<a href="https://github.com/zoleitschuk/movie_website_project">
+							<img class="featured-work-image" src="img/favorite-movies.png" alt="Screenshot of the favorite movies site.">
+							<h3 class="featured-work-title">Me Through Movies</h3>
+							<p class="featured-work-github-link">https://github.com/ zoleitschuk/ movie_website_project</p>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<a href="https://github.com/zoleitschuk/portfolio_site">
+							<img class="featured-work-image" src="http://placehold.it/350x200" alt="Screenshot of the proffessional portfolio site.">
+							<h3 class="featured-work-title">Portfolio Webpage</h3>
+							<p class="featured-work-github-link">https://github.com/ zoleitschuk/ portfolio_site</p>
+						</a>
+					</div>
+				</div>
+			</div>
 		</section>
-	</main>
 </body>
 </html>
