@@ -42,15 +42,3 @@
   border: 1px black solid;
 }
 
-@media screen and (min-width: 500px) {
-  /*
-   * Styling above 500px width here.
-   */
-}
-
-@media screen and (min-width: 800px) {
-  /*
-   * Styling above 800px width here.
-   */
-}
-
